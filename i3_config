@@ -30,7 +30,7 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec st
+bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -124,7 +124,7 @@ bindsym $mod+Shift+9 move container to workspace $workspace9
 bindsym $mod+Shift+0 move container to workspace 10
 
 # assign containers to specific workspaces
-assign [class="st-256color"] $workspace1
+assign [class="Terminator"] $workspace1
 assign [class="Google-chrome"] $workspace3
 assign [class="discord"] $workspace4
 for_window [class="Spotify"] move to workspace $workspace5
