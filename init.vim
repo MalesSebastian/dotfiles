@@ -10,8 +10,9 @@ syntax on
 " Specify a directory for plugins (for Neovim: ~/.local/share/nvim/plugged)
 call plug#begin('~/.local/share/nvim/plugged')
 
-" Color scheme
-Plug 'rakr/vim-one'
+" Color scheme:w
+Plug 'flazz/vim-colorschemes'
+Plug 'chriskempson/base16-vim'
 
 " Nerd tree
 Plug 'scrooloose/nerdtree'
@@ -135,13 +136,18 @@ if (empty($TMUX))
   endif
 endif
 
-
-set background=dark " for the dark version
-" set background=light " for the light version
-colorscheme one
+set background=dark
+colorscheme gruvbox
 
 " Airline colorscheme
-let g:airline_theme='one'
+let g:airline_theme='tomorrow'
+
+" air-line
+let g:airline_powerline_fonts = 1
+
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
 
 " Open nerd tree if dir is specified
 autocmd StdinReadPre * let s:std_in=1
