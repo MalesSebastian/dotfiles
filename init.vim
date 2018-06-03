@@ -40,6 +40,11 @@ Plug 'plasticboy/vim-markdown'
 " Fugitive vim
 Plug 'tpope/vim-fugitive'
 
+" Go packages
+Plug 'fatih/vim-go'
+Plug 'nsf/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
+
+
 " Initialize plugin system
 call plug#end()
 
