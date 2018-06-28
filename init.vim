@@ -10,7 +10,7 @@ syntax on
 " Specify a directory for plugins (for Neovim: ~/.local/share/nvim/plugged)
 call plug#begin('~/.local/share/nvim/plugged')
 
-" Color scheme:w
+" Color scheme
 Plug 'flazz/vim-colorschemes'
 Plug 'chriskempson/base16-vim'
 
@@ -142,10 +142,10 @@ if (empty($TMUX))
 endif
 
 set background=dark
-colorscheme gruvbox
+colorscheme papercolor
 
 " Airline colorscheme
-let g:airline_theme='tomorrow'
+let g:airline_theme='papercolor'
 
 " air-line
 let g:airline_powerline_fonts = 1
