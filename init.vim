@@ -24,8 +24,26 @@ Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
 " Autocomplete framework
-Plug 'roxma/nvim-completion-manager'
-Plug 'roxma/ncm-clang'
+Plug 'ncm2/ncm2'
+Plug 'roxma/nvim-yarp'
+
+" assuming your using vim-plug: https://github.com/junegunn/vim-plug
+Plug 'ncm2/ncm2'
+Plug 'roxma/nvim-yarp'
+
+" enable ncm2 for all buffers
+autocmd BufEnter * call ncm2#enable_for_buffer()
+
+" IMPORTANTE: :help Ncm2PopupOpen for more information
+set completeopt=noinsert,menuone,noselect
+
+" NOTE: you need to install completion sources to get completions. Check
+" our wiki page for a list of sources: https://github.com/ncm2/ncm2/wiki
+Plug 'ncm2/ncm2-bufword'
+Plug 'ncm2/ncm2-tmux'
+Plug 'ncm2/ncm2-path'
+
+" End of autocomplete
 
 " Indentline
 Plug 'yggdroot/indentline'
@@ -149,6 +167,8 @@ let g:airline_theme='papercolor'
 
 " air-line
 let g:airline_powerline_fonts = 1
+
+let g:Powerline_symbols = 'unicode'
 
 if !exists('g:airline_symbols')
     let g:airline_symbols = {}
