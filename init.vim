@@ -160,10 +160,10 @@ if (empty($TMUX))
 endif
 
 set background=dark
-colorscheme PaperColor
+colorscheme alduin
 
 " Airline colorscheme
-let g:airline_theme='papercolor'
+let g:airline_theme='alduin'
 
 " air-line
 let g:airline_powerline_fonts = 1
