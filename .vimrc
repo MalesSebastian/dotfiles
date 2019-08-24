@@ -30,6 +30,8 @@ Plugin 'leafgarland/typescript-vim' " Plugin to detect Typescript syntax
 
 Plugin 'ycm-core/YouCompleteMe' " Autocomplete engine
 
+Plugin 'pangloss/vim-javascript' " Better Javascript support
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
@@ -122,4 +124,5 @@ set smartcase
 set showmatch
 map <leader><space> :let @/=''<cr> " clear search
 
-
+" Javascript indent
+autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=0 expandtab
