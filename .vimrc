@@ -126,3 +126,5 @@ map <leader><space> :let @/=''<cr> " clear search
 
 " Javascript indent
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=0 expandtab
+" Typescript indent
+autocmd FileType typescript setlocal shiftwidth=4 tabstop=4 softtabstop=0 expandtab
