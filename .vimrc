@@ -32,6 +32,11 @@ Plugin 'ycm-core/YouCompleteMe' " Autocomplete engine
 
 Plugin 'pangloss/vim-javascript' " Better Javascript support
 
+Plugin 'xuhdev/vim-latex-live-preview' " Latex pdf preview
+
+Plugin 'neovimhaskell/haskell-vim'
+
+
 call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
@@ -59,6 +64,7 @@ set hlsearch	" Highlight all search results
 set smartcase	" Enable smart-case search
 set ignorecase	" Always case-insensitive
 set incsearch	" Searches for strings incrementally
+set spelllang=en_us "Spell check
 
 set autoindent	" Auto-indent new lines
 set cindent	" Use 'C' style program indenting
@@ -130,3 +136,8 @@ autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=0 expand
 autocmd FileType typescript setlocal shiftwidth=4 tabstop=4 softtabstop=0 expandtab
 " Haskell indent
 autocmd FileType haskell setlocal shiftwidth=4 tabstop=4 softtabstop=0 expandtab
+
+" Editing Latex settings
+autocmd Filetype tex setl updatetime=1
+let g:livepreview_previewer = 'open -a Preview'
+
