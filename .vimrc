@@ -81,7 +81,7 @@ set backspace=indent,eol,start	" Backspace behaviour
 " Colorscheme
 set background=dark
 syntax enable
-colorscheme dracula
+colorscheme sierra
 
 " Airline settings
 set laststatus=2
@@ -91,7 +91,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#formatter = 'default'
-let g:airline_theme='dracula'
+let g:airline_theme='sierra'
 
 " Nerd tree config
 map <C-x> :NERDTreeToggle<CR>
@@ -135,7 +135,7 @@ autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=0 expand
 " Typescript indent
 autocmd FileType typescript setlocal shiftwidth=4 tabstop=4 softtabstop=0 expandtab
 " Haskell indent
-autocmd FileType haskell setlocal shiftwidth=4 tabstop=4 softtabstop=0 expandtab
+autocmd FileType haskell setlocal shiftwidth=2 tabstop=2 softtabstop=0 expandtab
 
 " Editing Latex settings
 autocmd Filetype tex setl updatetime=1
